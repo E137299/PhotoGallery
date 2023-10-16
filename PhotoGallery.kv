@@ -1,0 +1,22 @@
+Display
+
+<Display>:
+    BoxLayout:
+        orientation: "vertical"
+        Label:
+            text: "Monte Saint Anne - UCI World Cup Photo Gallery"
+        Image:
+            id: image
+            source: root.display_image()
+            size_hint: 1, 6
+
+        BoxLayout:
+            Button:
+                text: "<<<"
+                background_color: "black"
+                on_press: root.back_image()
+
+            Button:
+                text: ">>>"
+                background_color: "black"
+                on_press: root.advance_image()
